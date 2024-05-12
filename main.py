@@ -12,7 +12,7 @@ try:
 except:
 	os.system("pip install Pillow")
 
-my_secret = os.environ['Token']
+my_secret = os.envget['TOKEN']
 admin = "din8647"
 
 intents = discord.Intents.all()
