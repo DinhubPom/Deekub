@@ -12,7 +12,7 @@ try:
 except:
 	os.system("pip install Pillow")
 
-my_secret = os.envget['TOKEN']
+TOKEN = os.getenv('TOKEN')
 admin = "din8647"
 
 intents = discord.Intents.all()
@@ -142,4 +142,4 @@ async def wallet(interaction: discord.Interaction):
 		
 
 
-client.run(my_secret)
+client.run(TOKEN)
